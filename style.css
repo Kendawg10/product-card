@@ -5,17 +5,23 @@ p {
     font-size: 14px;
     font-family: 'Fraunces', sans-serif;
 }
+body {
+    display: grid;
+    place-items: center;
+}
 /* h2 {
     font-family: 'Monterrat', sans-serif;
 } */
 .background {
     background-color: hsl(30, 38%, 92%);
+    align-items: ;
 }
 .container {
     display: flex;
     padding: 1rem;
     justify-content: center;
-    max-width: 100%;
+    max-width: 350px;
+    align-items: center;
     border-radius: 20px;
 }
 .card {
@@ -30,11 +36,10 @@ p {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any inline space below the image */
     margin: 0 auto; /* Center the image horizontally within the container */
-    flex-wrap: wrap;
     
   }
   .main-img {
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
   }
   .title{
     font-family: 'Fraunces', sans-serif;
@@ -45,6 +50,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     padding: 1.5rem;
+    justify-content: center;
+    margin:auto;
   }
   .title, .text, .full, .btn {
     padding: 0.5rem;
